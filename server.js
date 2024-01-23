@@ -15,7 +15,7 @@ app.use(cookieParser());
 app.post("/", async (req, res) => {
   let data = req.body;
   console.log(data);
-  if (data?.name) {
+  if (data.name) {
     const username = data.name;
     res.cookie("username", username);
     res.redirect("/welcome");
