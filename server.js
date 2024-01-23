@@ -18,7 +18,7 @@ app.post("/", async (req, res) => {
   if (data.name) {
     const username = data.name;
     res.cookie("username", username);
-    res.redirect("/welcome");
+    res.redirect("/welcome gilad");
   } else {
     res.redirect("/");
   }
